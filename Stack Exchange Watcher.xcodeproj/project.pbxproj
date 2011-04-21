@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FCEB6928136085130046CF1A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCEB6927136085130046CF1A /* Cocoa.framework */; };
+		FCEB692A136085130046CF1A /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCEB6929136085130046CF1A /* MacRuby.framework */; };
+		FCEB6931136085130046CF1A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCEB692F136085130046CF1A /* InfoPlist.strings */; };
+		FCEB6934136085130046CF1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEB6933136085130046CF1A /* main.m */; };
+		FCEB6938136085130046CF1A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCEB6936136085130046CF1A /* MainMenu.xib */; };
+		FCEB693B136085130046CF1A /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = FCEB693A136085130046CF1A /* rb_main.rb */; };
+		FCEB693D136085130046CF1A /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = FCEB693C136085130046CF1A /* AppDelegate.rb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FCEB6923136085130046CF1A /* Stack Exchange Watcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stack Exchange Watcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCEB6927136085130046CF1A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FCEB6929136085130046CF1A /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = System/Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
+		FCEB692E136085130046CF1A /* Stack Exchange Watcher-Info.plist */ = {isa = PBXFileReference; path = "Stack Exchange Watcher-Info.plist"; sourceTree = "<group>"; };
+		FCEB6930136085130046CF1A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FCEB6932136085130046CF1A /* Stack Exchange Watcher-Prefix.pch */ = {isa = PBXFileReference; path = "Stack Exchange Watcher-Prefix.pch"; sourceTree = "<group>"; };
+		FCEB6933136085130046CF1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FCEB6937136085130046CF1A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FCEB693A136085130046CF1A /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		FCEB693C136085130046CF1A /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCEB6920136085130046CF1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCEB6928136085130046CF1A /* Cocoa.framework in Frameworks */,
+				FCEB692A136085130046CF1A /* MacRuby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCEB6918136085130046CF1A = {
+			isa = PBXGroup;
+			children = (
+				FCEB692C136085130046CF1A /* Stack Exchange Watcher */,
+				FCEB6926136085130046CF1A /* Frameworks */,
+				FCEB6924136085130046CF1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCEB6924136085130046CF1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCEB6923136085130046CF1A /* Stack Exchange Watcher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCEB6926136085130046CF1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCEB6927136085130046CF1A /* Cocoa.framework */,
+				FCEB6929136085130046CF1A /* MacRuby.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCEB692C136085130046CF1A /* Stack Exchange Watcher */ = {
+			isa = PBXGroup;
+			children = (
+				FCEB693C136085130046CF1A /* AppDelegate.rb */,
+				FCEB6935136085130046CF1A /* Resources */,
+				FCEB6939136085130046CF1A /* Other Sources */,
+				FCEB692D136085130046CF1A /* Supporting Files */,
+			);
+			path = "Stack Exchange Watcher";
+			sourceTree = "<group>";
+		};
+		FCEB692D136085130046CF1A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCEB692E136085130046CF1A /* Stack Exchange Watcher-Info.plist */,
+				FCEB692F136085130046CF1A /* InfoPlist.strings */,
+				FCEB6932136085130046CF1A /* Stack Exchange Watcher-Prefix.pch */,
+				FCEB6933136085130046CF1A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FCEB6935136085130046CF1A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FCEB6936136085130046CF1A /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FCEB6939136085130046CF1A /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FCEB693A136085130046CF1A /* rb_main.rb */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		FCEB692B136085130046CF1A /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--compile --embed";
+			buildConfigurationList = FCEB6943136085130046CF1A /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/macruby_deploy;
+			dependencies = (
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		FCEB6922136085130046CF1A /* Stack Exchange Watcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCEB6940136085130046CF1A /* Build configuration list for PBXNativeTarget "Stack Exchange Watcher" */;
+			buildPhases = (
+				FCEB691F136085130046CF1A /* Sources */,
+				FCEB6920136085130046CF1A /* Frameworks */,
+				FCEB6921136085130046CF1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Stack Exchange Watcher";
+			productName = "Stack Exchange Watcher";
+			productReference = FCEB6923136085130046CF1A /* Stack Exchange Watcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCEB691A136085130046CF1A /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = FCEB691D136085130046CF1A /* Build configuration list for PBXProject "Stack Exchange Watcher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FCEB6918136085130046CF1A;
+			productRefGroup = FCEB6924136085130046CF1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCEB6922136085130046CF1A /* Stack Exchange Watcher */,
+				FCEB692B136085130046CF1A /* Deployment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCEB6921136085130046CF1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCEB6931136085130046CF1A /* InfoPlist.strings in Resources */,
+				FCEB6938136085130046CF1A /* MainMenu.xib in Resources */,
+				FCEB693B136085130046CF1A /* rb_main.rb in Resources */,
+				FCEB693D136085130046CF1A /* AppDelegate.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCEB691F136085130046CF1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCEB6934136085130046CF1A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FCEB692F136085130046CF1A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCEB6930136085130046CF1A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FCEB6936136085130046CF1A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCEB6937136085130046CF1A /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FCEB693E136085130046CF1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FCEB693F136085130046CF1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FCEB6941136085130046CF1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stack Exchange Watcher/Stack Exchange Watcher-Prefix.pch";
+				INFOPLIST_FILE = "Stack Exchange Watcher/Stack Exchange Watcher-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FCEB6942136085130046CF1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Stack Exchange Watcher/Stack Exchange Watcher-Prefix.pch";
+				INFOPLIST_FILE = "Stack Exchange Watcher/Stack Exchange Watcher-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FCEB6944136085130046CF1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		FCEB6945136085130046CF1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCEB691D136085130046CF1A /* Build configuration list for PBXProject "Stack Exchange Watcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCEB693E136085130046CF1A /* Debug */,
+				FCEB693F136085130046CF1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCEB6940136085130046CF1A /* Build configuration list for PBXNativeTarget "Stack Exchange Watcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCEB6941136085130046CF1A /* Debug */,
+				FCEB6942136085130046CF1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FCEB6943136085130046CF1A /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCEB6944136085130046CF1A /* Debug */,
+				FCEB6945136085130046CF1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCEB691A136085130046CF1A /* Project object */;
+}
