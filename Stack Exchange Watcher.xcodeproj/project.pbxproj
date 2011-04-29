@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FCE0EB71136B2A1900837336 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE0EB70136B2A1900837336 /* Growl.framework */; };
+		FCE0EB73136B2A3100837336 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FCE0EB70136B2A1900837336 /* Growl.framework */; };
+		FCE0EB75136B2BED00837336 /* Growl Registration Ticket.growlRegDict in Resources */ = {isa = PBXBuildFile; fileRef = FCE0EB74136B2BED00837336 /* Growl Registration Ticket.growlRegDict */; };
 		FCEB6928136085130046CF1A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCEB6927136085130046CF1A /* Cocoa.framework */; };
 		FCEB692A136085130046CF1A /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCEB6929136085130046CF1A /* MacRuby.framework */; };
 		FCEB6931136085130046CF1A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCEB692F136085130046CF1A /* InfoPlist.strings */; };
@@ -16,7 +19,22 @@
 		FCEB693D136085130046CF1A /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = FCEB693C136085130046CF1A /* AppDelegate.rb */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FCE0EB6D136B29D200837336 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FCE0EB73136B2A3100837336 /* Growl.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		FCE0EB70136B2A1900837336 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
+		FCE0EB74136B2BED00837336 /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Growl Registration Ticket.growlRegDict"; sourceTree = "<group>"; };
 		FCEB6923136085130046CF1A /* Stack Exchange Watcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stack Exchange Watcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCEB6927136085130046CF1A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		FCEB6929136085130046CF1A /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = System/Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
@@ -36,6 +54,7 @@
 			files = (
 				FCEB6928136085130046CF1A /* Cocoa.framework in Frameworks */,
 				FCEB692A136085130046CF1A /* MacRuby.framework in Frameworks */,
+				FCE0EB71136B2A1900837336 /* Growl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +81,7 @@
 		FCEB6926136085130046CF1A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FCE0EB70136B2A1900837336 /* Growl.framework */,
 				FCEB6927136085130046CF1A /* Cocoa.framework */,
 				FCEB6929136085130046CF1A /* MacRuby.framework */,
 			);
@@ -72,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				FCEB693C136085130046CF1A /* AppDelegate.rb */,
+				FCE0EB74136B2BED00837336 /* Growl Registration Ticket.growlRegDict */,
 				FCEB6935136085130046CF1A /* Resources */,
 				FCEB6939136085130046CF1A /* Other Sources */,
 				FCEB692D136085130046CF1A /* Supporting Files */,
@@ -132,6 +153,7 @@
 				FCEB691F136085130046CF1A /* Sources */,
 				FCEB6920136085130046CF1A /* Frameworks */,
 				FCEB6921136085130046CF1A /* Resources */,
+				FCE0EB6D136B29D200837336 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -174,6 +196,7 @@
 				FCEB6938136085130046CF1A /* MainMenu.xib in Resources */,
 				FCEB693B136085130046CF1A /* rb_main.rb in Resources */,
 				FCEB693D136085130046CF1A /* AppDelegate.rb in Resources */,
+				FCE0EB75136B2BED00837336 /* Growl Registration Ticket.growlRegDict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
