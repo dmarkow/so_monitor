@@ -20,9 +20,9 @@
 		FCEB6923136085130046CF1A /* Stack Exchange Watcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stack Exchange Watcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCEB6927136085130046CF1A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		FCEB6929136085130046CF1A /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = System/Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
-		FCEB692E136085130046CF1A /* Stack Exchange Watcher-Info.plist */ = {isa = PBXFileReference; path = "Stack Exchange Watcher-Info.plist"; sourceTree = "<group>"; };
+		FCEB692E136085130046CF1A /* Stack Exchange Watcher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Stack Exchange Watcher-Info.plist"; sourceTree = "<group>"; };
 		FCEB6930136085130046CF1A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FCEB6932136085130046CF1A /* Stack Exchange Watcher-Prefix.pch */ = {isa = PBXFileReference; path = "Stack Exchange Watcher-Prefix.pch"; sourceTree = "<group>"; };
+		FCEB6932136085130046CF1A /* Stack Exchange Watcher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stack Exchange Watcher-Prefix.pch"; sourceTree = "<group>"; };
 		FCEB6933136085130046CF1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FCEB6937136085130046CF1A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		FCEB693A136085130046CF1A /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
@@ -247,6 +247,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_ENABLE_OBJC_GC = required;
@@ -264,6 +268,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -305,6 +313,7 @@
 				FCEB6942136085130046CF1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FCEB6943136085130046CF1A /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
 			isa = XCConfigurationList;
@@ -313,6 +322,7 @@
 				FCEB6945136085130046CF1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
