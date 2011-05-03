@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC6E1BF313705C7000FDE241 /* so.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6E1BF213705C7000FDE241 /* so.png */; };
+		FC6E1BF513705F3100FDE241 /* so_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6E1BF413705F3100FDE241 /* so_icon.png */; };
 		FCE0EB71136B2A1900837336 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE0EB70136B2A1900837336 /* Growl.framework */; };
 		FCE0EB73136B2A3100837336 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FCE0EB70136B2A1900837336 /* Growl.framework */; };
 		FCE0EB75136B2BED00837336 /* Growl Registration Ticket.growlRegDict in Resources */ = {isa = PBXBuildFile; fileRef = FCE0EB74136B2BED00837336 /* Growl Registration Ticket.growlRegDict */; };
@@ -33,6 +35,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FC6E1BF213705C7000FDE241 /* so.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = so.png; sourceTree = "<group>"; };
+		FC6E1BF413705F3100FDE241 /* so_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = so_icon.png; sourceTree = "<group>"; };
 		FCE0EB70136B2A1900837336 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		FCE0EB74136B2BED00837336 /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Growl Registration Ticket.growlRegDict"; sourceTree = "<group>"; };
 		FCEB6923136085130046CF1A /* Stack Exchange Watcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stack Exchange Watcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,7 +48,7 @@
 		FCEB6933136085130046CF1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FCEB6937136085130046CF1A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		FCEB693A136085130046CF1A /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
-		FCEB693C136085130046CF1A /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+		FCEB693C136085130046CF1A /* AppDelegate.rb */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; tabWidth = 2; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,8 @@
 		FCEB692C136085130046CF1A /* Stack Exchange Watcher */ = {
 			isa = PBXGroup;
 			children = (
+				FC6E1BF413705F3100FDE241 /* so_icon.png */,
+				FC6E1BF213705C7000FDE241 /* so.png */,
 				FCEB693C136085130046CF1A /* AppDelegate.rb */,
 				FCE0EB74136B2BED00837336 /* Growl Registration Ticket.growlRegDict */,
 				FCEB6935136085130046CF1A /* Resources */,
@@ -197,6 +203,8 @@
 				FCEB693B136085130046CF1A /* rb_main.rb in Resources */,
 				FCEB693D136085130046CF1A /* AppDelegate.rb in Resources */,
 				FCE0EB75136B2BED00837336 /* Growl Registration Ticket.growlRegDict in Resources */,
+				FC6E1BF313705C7000FDE241 /* so.png in Resources */,
+				FC6E1BF513705F3100FDE241 /* so_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
