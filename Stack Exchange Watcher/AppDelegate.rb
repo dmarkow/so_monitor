@@ -14,8 +14,15 @@ class AppDelegate
     initStatusBar setupMenu
     @se_watcher = SEWatcher.new
 
+    
+    
     @timer = NSTimer.scheduledTimerWithTimeInterval 60, target:self, selector:'sayHello:', userInfo:nil, repeats:true
     @timer.fire
+    
+  end
+  
+  def applicationWillResignActive(aNotification)
+    puts "locked screen!"
   end
 
   def setupMenu
@@ -86,7 +93,7 @@ class SEWatcher
     @content = JSON.parse(NSMutableString.alloc.initWithContentsOfURL(NSURL.URLWithString('http://api.stackoverflow.com/1.1/users/424300'), encoding:NSUTF8StringEncoding, error:nil))
     new_rep = @content["users"].first["reputation"].to_i
     if @current_reputation != new_rep
-      GrowlApplicationBridge.notifyWithTitle("Stack Overflow Reputation", description:"Your reputation has increased by #{new_rep - @current_reputation}!\n\nYour current reputation is: #{new_rep}", notificationName:"Test", iconData:@icon_data, priority:0, isSticky:true, clickContext:"http://stackoverflow.com/users/424300")
+      GrowlApplicationBridge.notifyWithTitle("Stack Overflow Reputation", description:"Your reputation has increased by #{new_rep - @current_reputation}!\n\nYour current reputation is: #{new_rep}", notificationName:"Test", iconData:@icon_data, priority:0, isSticky:true, clickContext:"http://stackoverflow.com/users/424300?tab=reputation#reppage_1-repview_time")
       @current_reputation = new_rep
     end
     str = "http://api.stackoverflow.com/1.1/questions?tagged=ruby%2Bor%2Bruby-on-rails-3%2Bor%2Bruby-on-rails&fromdate=#{@last_question_time}"
