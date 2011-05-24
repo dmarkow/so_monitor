@@ -7,6 +7,10 @@
 #
 require 'json'
 
+class PreferencesWindowController < NSWindowController
+  
+end
+
 class AppDelegate
   attr_accessor :window
 
