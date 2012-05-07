@@ -13,11 +13,11 @@ end
 
 class AppDelegate
   attr_accessor :window
-
+  
   def applicationDidFinishLaunching(a_notification)
     initStatusBar setupMenu
     @se_watcher = SEWatcher.new
-
+    
     
     
     @timer = NSTimer.scheduledTimerWithTimeInterval 60, target:self, selector:'sayHello:', userInfo:nil, repeats:true
@@ -28,7 +28,7 @@ class AppDelegate
   def applicationWillResignActive(aNotification)
     puts "locked screen!"
   end
-
+  
   def setupMenu
     menu = NSMenu.new
     menu.initWithTitle 'FooApp'
@@ -49,29 +49,29 @@ class AppDelegate
     menu.addItem mi
     menu
   end
-
+  
   def quit(sender)
     exit
   end
-
+  
   def view_profile(sender)
     NSWorkspace.sharedWorkspace.openURL(NSURL.URLWithString("http://stackoverflow.com/users/424300"))
   end
-
+  
   def sayHello(sender)
     #GrowlApplicationBridge.notifyWithTitle("Test", description:"This is my test.", notificationName:"Test", iconData:nil, priority:0, isSticky:false,clickContext:"foo")
     puts sender.class
     @se_watcher.update
     @status_item.title = "#{@se_watcher.current_reputation}"
-
+    
   end
-
+  
   def growlNotificationWasClicked(context)
     puts context
   end
-def mute(sender)
-  
-  @se_watcher.muted = true
+  def mute(sender)
+    
+    @se_watcher.muted = true
   end
   
   def initStatusBar(menu)
@@ -81,7 +81,7 @@ def mute(sender)
     @status_item.setMenu menu
     @status_item.highlightMode = true
   end
-
+  
 end
 
 class SEWatcher
@@ -95,7 +95,7 @@ class SEWatcher
     @icon_data = NSData.alloc.initWithContentsOfURL(NSURL.fileURLWithPath(NSBundle.mainBundle.pathForResource("so", ofType:"png")))
     @muted = false
   end
-
+  
   def update
     
     
@@ -104,17 +104,17 @@ class SEWatcher
     if @current_reputation != new_rep
       unless @muted
         if @current_reputation == 0
-          GrowlApplicationBridge.notifyWithTitle("Stack Overflow Reputation", description:"Your reputation is currently #{new_rep}.", notificationName:"Test", iconData:@icon_data, priority:0, isSticky:true, clickContext:"http://stackoverflow.com/users/424300?tab=reputation#reppage_1-repview_time")
-        else
+          GrowlApplicationBridge.notifyWithTitle("Stack Overflow Reputation", description:"Your reputation is: #{new_rep}.", notificationName:"Test", iconData:@icon_data, priority:0, isSticky:true, clickContext:"http://stackoverflow.com/users/424300?tab=reputation#reppage_1-repview_time")
+          else
           GrowlApplicationBridge.notifyWithTitle("Stack Overflow Reputation", description:"Your reputation has increased by #{new_rep - @current_reputation}!\n\nYour current reputation is: #{new_rep}", notificationName:"Test", iconData:@icon_data, priority:0, isSticky:true, clickContext:"http://stackoverflow.com/users/424300?tab=reputation#reppage_1-repview_time")
         end
       end
       @current_reputation = new_rep
     end
-    str = "http://api.stackoverflow.com/1.1/questions?tagged=ruby%2Bor%2Bruby-on-rails-3%2Bor%2Bruby-on-rails&fromdate=#{@last_question_time}"
+    str = "http://api.stackoverflow.com/1.1/questions?tagged=ruby%2Bor%2Brubymotion%2Bor%2Bruby-on-rails-3%2Bor%2Bruby-on-rails%2Bor%2Bruby-on-rails-3.1%2Bor%2Bruby-on-rails-3.2&fromdate=#{@last_question_time}"
     puts "Time: #{@last_question_time}"
     puts "Querying: #{str}"
-
+    
     @content = JSON.parse(NSMutableString.alloc.initWithContentsOfURL(NSURL.URLWithString(str)))
     puts @content
     questions = @content["questions"]
@@ -122,15 +122,15 @@ class SEWatcher
     unless questions.size == 0
       @last_question_time = questions[0]["creation_date"].to_i + 1
       unless @muted
-      questions.each do |question|
-        GrowlApplicationBridge.notifyWithTitle("Stack Overflow: New Question", description:question['title'], notificationName:'Test', iconData:@icon_data, priority:0, isSticky:true, clickContext:"http://stackoverflow.com/questions/#{question['question_id']}")
-      end
+        questions.each do |question|
+          GrowlApplicationBridge.notifyWithTitle("Stack Overflow: New Question", description:question['title'], notificationName:'Test', iconData:@icon_data, priority:0, isSticky:true, clickContext:"http://stackoverflow.com/questions/#{question['question_id']}")
         end
+      end
     end
   end
-
+  
   def growlNotificationWasClicked(context)
     NSWorkspace.sharedWorkspace.openURL(NSURL.URLWithString(context))
   end
-
+  
 end
